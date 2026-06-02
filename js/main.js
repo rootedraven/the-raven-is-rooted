@@ -4,6 +4,7 @@
   // Replace with your Hipcamp listing URL
   const HIP_CAMP_URL =
     "https://www.hipcamp.com/en-US/land/washington-rooted-raven-dw9hym2p?adults=1&children=0";
+  const AIRBNB_URL = "https://www.airbnb.com";
 
   const yearEl = document.getElementById("year");
   if (yearEl) {
@@ -12,6 +13,10 @@
 
   document.querySelectorAll(".hipcamp-link").forEach(function (link) {
     link.href = HIP_CAMP_URL;
+  });
+
+  document.querySelectorAll(".airbnb-link").forEach(function (link) {
+    link.href = AIRBNB_URL;
   });
 
   const header = document.querySelector(".site-header");
